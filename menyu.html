@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorantimizin Menyusu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Tosun Restorant</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Restorant</a>
+              </li>
+              <!-- 2 -->
+              <li class="nav-item">
+                <a class="nav-link" href="menyu.html">Menyu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="i.html">Yemək şəkilləri</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- by -->
+      <div class="card" style="height: 150px;">
+        <img src="burger.jpg" class="card-img-top" alt="Image">
+        <div class="card-body">
+          <h2 id="b">EX</h2>
+        </div>
+      </div>
+      
+      <!-- script gelmeyin -->
+      <script>
+      alert('Elimde cemi 100 manat var');
+alert('Restoranta girildi');
+let p = +prompt('Neche burger isteyirsiniz');
+let burger = 5;
+let b = +prompt('Neche pizza isteyirsiniz');
+let pizza = 12;
+let a = +prompt('Neche doner isteyirsiniz');
+let doner = 2; 
+        
+let cemi1 = p * burger;
+let cemi2 = b * pizza;
+let cemi3 = a * doner;
+        
+let total = cemi1 + cemi2 + cemi3;
+        
+let netice;
+        
+if (total < 100 ) {
+    netice = `buyurun ${p} burger , ${b} pizza , ${a} doner sifarisler bunlardir`;
+} else {
+    netice = 'Pulunuz çatmır';
+}
+
+document.getElementById('b').innerHTML = `${netice} yedikleriniz ${total}man tuttu`;
+
+        </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+</body>
+</html>

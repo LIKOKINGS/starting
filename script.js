@@ -1,0 +1,1 @@
+alert('Restorant a xos gelmisiniz');
